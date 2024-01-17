@@ -4,12 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tailwindcss -i ./css/input.css -o ./css/style.css --watch"
+    "build:eleventy": "npx @11ty/eleventy",
+    "build:tailwind": "npx tailwindcss -i ./src/global.css -o ./src/css/style.css --minify",
+    "build": "npm run build:tailwind && npm run build:eleventy",
+    "start:eleventy": "npx @11ty/eleventy --serve --quiet --watch",
+    "start:tailwind": "npx tailwindcss -i ./src/global.css -o ./src/css/style.css --watch",
+    "start": "npm run start:eleventy & npm run start:tailwind"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1"
   }
 }
