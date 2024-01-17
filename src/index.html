@@ -3,14 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Max Hajek Personal Website</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
-  <body class="h-screen w-screen">
+  <body class="h-screen font-rubik">
     <header>
       <nav
-        class="flex justify-between items-center min-h-16 shadow-sm font-mono"
+        class="container mx-auto flex justify-between items-center min-h-16 shadow-sm font-lexend font-bold text-xl"
         role="navigation"
       >
         <a href="#" class="pl-8">Maximilian Hajek</a>
@@ -21,32 +31,39 @@
         </div>
       </nav>
     </header>
-    <div>
-      <h1>Welcome to my personal corner of the internet!</h1>
-    </div>
-    <div class="pt-8">
-      <button
-        class="inline-block h-8 border-2 shadow-neo-md hover:shadow-neo-lg hover:-translate-y-1 hover:-translate-x-1 shadow-white rounded-xl px-8 transition-shadow-transform duration-300 ease-custom-ease"
-      >
-        test me
-      </button>
-    </div>
-    <footer class="border-t">
-      <div
-        class="container mx-auto px-6 flex justify-between items-center h-16"
-      >
-        <div class="flex">
-          <a href="/" class="text-blue-500">MH</a>
-          <h3>
-            Maximilian Hajek <br />
-            Digital Creator & Code Craftsman
-          </h3>
+    <main class="container mx-auto px-6 pb-6">
+      <section class="grid grid-cols-2">
+        <div class="bg-green-500">Hello</div>
+        <div>
+          <img src="./img/max1.jpg" alt="" />
         </div>
-        <p>
-          © 2024 maxhajek.com <br />
-          hosted by <a href="https://pages.github.com/">GitHub Pages</a>
-        </p>
+      </section>
+      <div>
+        <h1>Welcome to my personal corner of the internet!</h1>
       </div>
+      <div class="pt-8">
+        <button
+          class="font-lexend font-bold inline-block h-8 border-2 border-black shadow-neo-md hover:shadow-neo-lg hover:-translate-y-1 hover:-translate-x-1 rounded-xl px-8 transition-shadow-transform duration-300 ease-custom-ease"
+        >
+          Go to projects
+        </button>
+      </div>
+    </main>
+    <footer
+      class="container mx-auto border-t px-6 flex justify-between items-center h-16"
+    >
+      <div class="flex">
+        <a href="/" class="text-blue-500">MH</a>
+        <h3>
+          Maximilian Hajek <br />
+          Digital Creator & Code Craftsman
+        </h3>
+      </div>
+      <p>
+        © 2024 maxhajek.com <br />
+        hosted with <a href="https://pages.github.com/">GitHub Pages</a> and
+        11ty
+      </p>
     </footer>
   </body>
 </html>
