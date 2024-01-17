@@ -2,6 +2,9 @@
 # Ignore the build directory
 _site/
 
+# Ignore generated css files from tailwind
+src/css/
+
 ### Node ###
 # Logs
 logs
