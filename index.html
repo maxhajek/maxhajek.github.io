@@ -11,7 +11,17 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="h-screen w-screen flex justify-center items-center bg-black text-white">
+<body class="h-screen w-screen bg-black text-white">
+    <header>
+        <nav class="flex justify-between items-center min-h-16 shadow-sm font-mono" role="navigation">
+            <a href="#" class="pl-8">Maximilian Hajek</a>
+            <div class="pr-8" id="menu">
+                <a href="#" class="p-4">About</a>
+                <a href="#" class="p-4">Contact</a>
+                <a href="#" class="p-4">Projects</a>
+            </div>
+        </nav>
+    </header>
     <div>
         <h1>Welcome to my personal corner of the internet!</h1>
         <button class="btn" hx-post="/submit" hx-prompt="Enter a string" hx-confirm="Are you sure?"
@@ -19,6 +29,11 @@
             Prompt Submission Test
         </button>
         <div id="response"></div>
+    </div>
+    <div class="pt-8">
+        <button
+            class="inline-block h-8 border-white border-2 shadow-neo-md hover:shadow-neo-lg hover:-translate-y-1 hover:-translate-x-1 shadow-white rounded-xl px-8 transition-shadow-transform duration-300 ease-custom-ease">test
+            me</button>
     </div>
 </body>
 
