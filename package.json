@@ -6,7 +6,7 @@
   "scripts": {
     "build:eleventy": "npx @11ty/eleventy",
     "build:tailwind": "npx tailwindcss -i ./src/global.css -o ./src/css/style.css --minify",
-    "build": "npm run build:tailwind && npm run build:eleventy",
+    "build": "npm run build:tailwind & npm run build:eleventy",
     "start:eleventy": "npx @11ty/eleventy --serve --quiet --watch",
     "start:tailwind": "npx tailwindcss -i ./src/global.css -o ./src/css/style.css --watch",
     "start": "npm run start:eleventy & npm run start:tailwind"
