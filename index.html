@@ -2,18 +2,21 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://unpkg.com/htmx.org@1.9.10"
+        integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-
-    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+<body class="h-screen w-screen flex justify-center items-center bg-black text-white">
     <div>
+        <h1>Welcome to my personal corner of the internet!</h1>
         <button class="btn" hx-post="/submit" hx-prompt="Enter a string" hx-confirm="Are you sure?"
             hx-target="#response">
-            Prompt Submission
+            Prompt Submission Test
         </button>
         <div id="response"></div>
     </div>
