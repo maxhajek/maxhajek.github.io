@@ -24,7 +24,7 @@
         role="navigation"
       >
         <a href="#" class="pl-8">Maximilian Hajek</a>
-        <div class="pr-8" id="menu">
+        <div class="pr-8 hidden sm:block" id="menu">
           <a href="#" class="p-4">about me</a>
           <a href="#" class="p-4">projects</a>
           <a href="#" class="p-4">blog</a>
@@ -32,21 +32,40 @@
       </nav>
     </header>
     <main class="container mx-auto px-6 pb-6">
-      <section class="grid grid-cols-2">
-        <div class="bg-green-500">Hello</div>
-        <div>
-          <img src="./img/max1.jpg" alt="" />
+      <section class="grid grid-cols-1 sm:grid-cols-2 py-8">
+        <div class="flex flex-col pb-5">
+          <p>Hi, my name is Max.</p>
+          <h1 class="text-7xl text-shadow shadow-[#2fff2f]">
+            I code for growth.
+          </h1>
+          <p class="pt-5">
+            I'm a IT Project Manager with a economics background, Code
+          </p>
+          <div class="pt-8">
+            <button
+              class="font-lexend font-bold inline-block py-3 border-2 border-black shadow-neo-md hover:shadow-neo-lg hover:-translate-y-1 hover:-translate-x-1 rounded-xl px-8 transition-shadow-transform duration-300 ease-custom-ease"
+            >
+              Go to projects
+            </button>
+          </div>
         </div>
+
+        <div class="flex justify-center">
+          <img
+            class="object-contain h-[300px] sm:h-[400px] shadow-neo-lg outline"
+            src="./img/max1.jpg"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="grid grid-cols-2 py-8 border-t">
+        <div>
+          <h2>here it is</h2>
+        </div>
+        <div>{{ content | safe }}</div>
       </section>
       <div>
         <h1>Welcome to my personal corner of the internet!</h1>
-      </div>
-      <div class="pt-8">
-        <button
-          class="font-lexend font-bold inline-block h-8 border-2 border-black shadow-neo-md hover:shadow-neo-lg hover:-translate-y-1 hover:-translate-x-1 rounded-xl px-8 transition-shadow-transform duration-300 ease-custom-ease"
-        >
-          Go to projects
-        </button>
       </div>
     </main>
     <footer

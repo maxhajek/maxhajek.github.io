@@ -1,8 +1,13 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require("tailwindcss/plugin");
+
 module.exports = {
-  content: ["./src/**/*.html"],
+  content: ["./src/**/*.njk"],
   theme: {
     extend: {
+      textShadow: {
+        DEFAULT: "var(--tw-shadow-color) 0 2px",
+      },
       fontFamily: {
         lexend: ["Lexend\\ Mega", "Inter", "sans-serif"],
         rubik: ["Rubik", "Inter", "sans-serif"],
@@ -19,5 +24,16 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          "text-shadow": (value) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme("textShadow") }
+      );
+    }),
+  ],
 };
