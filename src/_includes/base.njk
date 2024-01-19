@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Max Hajek Personal Website</title>
+    <title>MH | {% block title %}{% endblock %}</title>
+    <link rel="canonical" href="http://www.maxhajek.com/" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,50 +19,8 @@
   </head>
 
   <body class="h-screen font-rubik dark:text-white dark:bg-black">
-    {% include "header.njk" %}
-    <main class="container mx-auto px-8">
-      <section class="grid grid-cols-1 lg:grid-cols-2 py-8">
-        <div class="flex flex-col justify-center py-8">
-          <h1 class="text-7xl text-shadow shadow-[#2fff2f]">
-            <q>In a digital world, I create my own path.</q>
-          </h1>
-          <h2 class="text-xl pt-10 pb-5">
-            Hi, my name is Max. With an economics background, I am now a
-            self-taught developer and digital creator. I am passionate about the
-            web and building things that make a difference.
-          </h2>
-          <div class="pt-8 flex justify-center lg:justify-start">
-            <button
-              class="font-lexend outline-none font-bold inline-block py-3 border-2 border-black dark:border-white shadow-neo-md hover:shadow-neo-lg hover:-translate-y-1 hover:-translate-x-1 rounded-xl px-8 transition-shadow-transform duration-300 ease-custom-ease"
-            >
-              Go to projects
-            </button>
-          </div>
-        </div>
-
-        <div class="flex justify-center py-10 lg:py-0 lg:justify-end">
-          <img
-            class="object-contain h-[400px] sm:h-[400px] md:h-[560px] md:mr-10 shadow-neo-lg outline-[#2fff2f] outline"
-            src="./img/max1.jpg"
-            alt=""
-          />
-        </div>
-      </section>
-      <section class="grid grid-cols-2 py-8 border-t">
-        <div>
-          <h2>here it is</h2>
-        </div>
-        <div>{{ content | safe }}</div>
-      </section>
-      <div>
-        <h1>Welcome to my personal corner of the internet!</h1>
-        <p>
-          I am passionate about building things that make a difference. I am
-          currently working on a few projects that I am excited to share with
-          you soon.
-        </p>
-      </div>
-    </main>
-    {% include "footer.njk" %}
+    {% include "components/header.njk" %}
+    <main class="container mx-auto px-8">{% block main %}{% endblock %}</main>
+    {% include "components/footer.njk" %}
   </body>
 </html>

@@ -1,0 +1,35 @@
+{% extends "base.njk" %} {% block title %}{{ title }}{% endblock %} {% block
+main %}
+<section class="grid grid-cols-1 lg:grid-cols-2 py-8">
+  <div class="flex flex-col justify-center py-8">
+    <h1 class="text-7xl text-shadow shadow-[#2fff2f]">
+      <q>In a digital world, I create my own path.</q>
+    </h1>
+    <h2 class="text-xl pt-10 pb-5">
+      Hi, my name is Max. With an economics background, I am now a self-taught
+      developer and digital creator. I am passionate about the web and building
+      things that make a difference.
+    </h2>
+    <div class="pt-8 flex justify-center lg:justify-start">
+      <button
+        class="font-lexend outline-none font-bold inline-block py-3 border-2 border-black dark:border-white shadow-neo-md hover:shadow-neo-lg hover:-translate-y-1 hover:-translate-x-1 rounded-xl px-8 transition-shadow-transform duration-300 ease-custom-ease"
+      >
+        Go to projects
+      </button>
+    </div>
+  </div>
+  <div class="flex justify-center py-10 lg:py-0 lg:justify-end">
+    <img
+      class="object-contain h-[400px] sm:h-[400px] md:h-[560px] xl:mr-10 shadow-neo-lg outline-[#2fff2f] outline"
+      src="./img/max1.jpg"
+      alt=""
+    />
+  </div>
+</section>
+<section class="grid grid-cols-2 py-8 border-t">
+  <div>
+    <h2>here it is</h2>
+  </div>
+  <div>{{ content | safe }}</div>
+</section>
+{% endblock %}

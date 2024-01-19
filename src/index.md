@@ -1,6 +1,7 @@
 ---
-title: Hello World
-layout: "base.njk"
+title: Willkommen auf meiner Seite - Maximilian Hajek
+desciption: test me
+layout: "index.njk"
 ---
 
 Hello Boi
