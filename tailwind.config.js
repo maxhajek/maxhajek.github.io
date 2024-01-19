@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       textShadow: {
-        DEFAULT: "var(--tw-shadow-color) 0 2px",
+        DEFAULT: "#2fff2f 0 2px",
       },
       fontFamily: {
         lexend: ["Lexend\\ Mega", "Inter", "sans-serif"],

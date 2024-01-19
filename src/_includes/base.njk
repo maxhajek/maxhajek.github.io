@@ -18,41 +18,30 @@
   </head>
 
   <body class="h-screen font-rubik dark:text-white dark:bg-black">
-    <header>
-      <nav
-        class="container mx-auto flex justify-between items-center min-h-16 shadow-sm font-lexend font-bold text-xl"
-        role="navigation"
-      >
-        <a href="#" class="pl-8">Maximilian Hajek</a>
-        <div class="pr-8 hidden sm:block" id="menu">
-          <a href="#" class="p-4">about me</a>
-          <a href="#" class="p-4">projects</a>
-          <a href="#" class="p-4">blog</a>
-        </div>
-      </nav>
-    </header>
-    <main class="container mx-auto px-6 pb-6">
-      <section class="grid grid-cols-1 sm:grid-cols-2 py-8">
-        <div class="flex flex-col pb-5">
-          <p>Hi, my name is Max.</p>
+    {% include "header.njk" %}
+    <main class="container mx-auto px-8">
+      <section class="grid grid-cols-1 lg:grid-cols-2 py-8">
+        <div class="flex flex-col justify-center py-8">
           <h1 class="text-7xl text-shadow shadow-[#2fff2f]">
-            In a digital world, I create my own path.
+            <q>In a digital world, I create my own path.</q>
           </h1>
-          <p class="pt-5">
-            I'm a IT Project Manager with a economics background, Code
-          </p>
-          <div class="pt-8">
+          <h2 class="text-xl pt-10 pb-5">
+            Hi, my name is Max. With an economics background, I am now a
+            self-taught developer and digital creator. I am passionate about the
+            web and building things that make a difference.
+          </h2>
+          <div class="pt-8 flex justify-center lg:justify-start">
             <button
-              class="font-lexend font-bold inline-block py-3 border-2 border-black dark:border-white shadow-neo-md hover:shadow-neo-lg hover:-translate-y-1 hover:-translate-x-1 rounded-xl px-8 transition-shadow-transform duration-300 ease-custom-ease"
+              class="font-lexend outline-none font-bold inline-block py-3 border-2 border-black dark:border-white shadow-neo-md hover:shadow-neo-lg hover:-translate-y-1 hover:-translate-x-1 rounded-xl px-8 transition-shadow-transform duration-300 ease-custom-ease"
             >
               Go to projects
             </button>
           </div>
         </div>
 
-        <div class="flex justify-center">
+        <div class="flex justify-center py-10 lg:py-0 lg:justify-end">
           <img
-            class="object-contain h-[300px] sm:h-[400px] shadow-neo-lg outline"
+            class="object-contain h-[400px] sm:h-[400px] md:h-[560px] md:mr-10 shadow-neo-lg outline-[#2fff2f] outline"
             src="./img/max1.jpg"
             alt=""
           />
@@ -66,23 +55,13 @@
       </section>
       <div>
         <h1>Welcome to my personal corner of the internet!</h1>
+        <p>
+          I am passionate about building things that make a difference. I am
+          currently working on a few projects that I am excited to share with
+          you soon.
+        </p>
       </div>
     </main>
-    <footer
-      class="container mx-auto border-t px-6 flex justify-between items-center h-16"
-    >
-      <div class="flex">
-        <a href="/" class="text-blue-500">MH</a>
-        <h3>
-          Maximilian Hajek <br />
-          Digital Creator & Code Craftsman
-        </h3>
-      </div>
-      <p>
-        © 2024 maxhajek.com <br />
-        hosted with <a href="https://pages.github.com/">GitHub Pages</a> and
-        11ty
-      </p>
-    </footer>
+    {% include "footer.njk" %}
   </body>
 </html>
