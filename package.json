@@ -1,8 +1,6 @@
 {
-  "name": "personal-web",
+  "name": "maxhajek.github.io",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "build:eleventy": "npx @11ty/eleventy",
     "build:tailwind": "npx tailwindcss -i ./src/global.css -o ./src/css/style.css --minify",
@@ -13,7 +11,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "",
   "devDependencies": {
     "tailwindcss": "^3.4.1"
   },
