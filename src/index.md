@@ -1,6 +1,6 @@
 ---
-title: Willkommen auf meiner Seite - Maximilian Hajek
-desciption: test me
+title: Welcome to my personal webpage - Maximilian Hajek
+desciption: Welcome to my personal webpage
 layout: "index.njk"
 ---
 
