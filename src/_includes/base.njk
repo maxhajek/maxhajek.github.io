@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maximilian Hajek | {% block title %}{% endblock %}</title>
-    <meta name="description" content="{% block description %}{% endblock %}" />
+    <meta
+      name="description"
+      content="{% block description %}{{ description }}{% endblock %}"
+    />
     <link rel="canonical" href="http://www.maxhajek.com/" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,10 +15,12 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@400&display=swap"
       rel="stylesheet"
+      preload
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
       rel="stylesheet"
+      preload
     />
   </head>
 
