@@ -1,5 +1,5 @@
 {% extends "base.njk" %} {% block title %}{{ title }}{% endblock %} {% block
-description %}{% endblock %} {% block main %}
+description %}{{ description }}{% endblock %} {% block main %}
 <section class="grid grid-cols-1 lg:grid-cols-2 pt-12 py-8 h-[850px]">
   <div class="flex flex-col justify-center">
     <h1 class="text-5xl md:text-6xl xl:text-7xl text-shadow shadow-[#2fff2f]">
@@ -21,6 +21,7 @@ description %}{% endblock %} {% block main %}
         <a
           target="_blank"
           href="https://github.com/maxhajek"
+          aria-label="GitHub"
           class="dark:fill-white fill-black w-10 transition-transform hover:scale-105 duration-300 ease-in-out"
         >
           <svg
@@ -36,6 +37,7 @@ description %}{% endblock %} {% block main %}
         <a
           target="_blank"
           href="https://www.linkedin.com/in/maximilian-hajek-001931100"
+          aria-label="LinkedIn"
           class="dark:fill-white fill-black w-10 transition-transform hover:scale-105 duration-300 ease-in-out"
         >
           <svg
@@ -59,8 +61,8 @@ description %}{% endblock %} {% block main %}
   <div class="flex items-center justify-center py-3 lg:py-0 lg:justify-end">
     <img
       class="object-contain h-[400px] sm:h-[400px] lg:h-[560px] xl:mr-10 shadow-neo-lg outline-[#2fff2f] outline"
-      src="./img/max1.jpg"
-      alt=""
+      src="./img/max1.webp"
+      alt="personal photo"
     />
   </div>
 </section>
@@ -74,6 +76,7 @@ description %}{% endblock %} {% block main %}
       <a
         class="text-[#2fff2f] underline underline-offset-2"
         href="https://github.com/maxhajek/maxhajek.github.io"
+        areia-label="GitHub Project"
         >GitHub</a
       >
     </li>
